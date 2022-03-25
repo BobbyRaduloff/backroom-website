@@ -948,8 +948,8 @@
 	    var xhr = new XMLHttpRequest();
 	    xhr.open("POST", "https://backroomdao.com/whitelist.php", true);
 	    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-	    xhr.send("eth=" + eth + "&email=" + email + "&twitter=" + twitter);   
-      if (xhr.status != 200) {
+	    xhr.send("eth=" + eth + "&email=" + email + "&twitter=" + twitter); 
+      if (xhr.responseText != '') {
         al.appendChild(document.createTextNode(xhr.responseText));
       } else {
         s.appendChild(document.createTextNode("Thank you for signing up!"));
