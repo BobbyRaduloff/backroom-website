@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="ud-dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        The Back Room - Stake and Play
+    </title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/apexcharts.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- ===== Alpine JS ===== -->
+    <script defer src="./js/alpine.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        // ===== wow js
+        new WOW().init();
+    </script>
+</head>
+
+<body x-data="
+      {
+        scrolledFromTop: false
+      }
+    " x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+    @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+    class="ud-back-dark dark:ud-back-dark">
+    <!-- ===== Header start ===== -->
+    <header x-data="
+        {
+          navbarOpen: false,
+          dropdownOpen: false
+        }
+      " :class="scrolledFromTop ? 'ud-back-gray dark:ud-back-white ud-bg-opacity-50 dark:ud-bg-opacity-50 ud-shadow-sticky ud-backdrop-blur-sm ' : ' ud-bg-transparent dark:ud-bg-transparent' "
+        class="ud-top-0 ud-z-50 ud-flex ud-w-full ud-items-center ud-fixed">
+        <div class="ud-container">
+            <div class="ud-relative ud--mx-4 ud-flex ud-items-center ud-justify-between">
+                <div class="ud-w-60 ud-max-w-full ud-px-4">
+                    <a href="index.html" :class="scrolledFromTop && '!ud-py-4 lg:!ud-py-2' "
+                        class="ud-block ud-w-80p ud-py-6 lg:ud-py-5">
+                        <img src="images/logo/logo-backroom.png" alt="logo" class="ud-w-80p" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== Header end ===== -->
+
+    <!-- ===== TC start ===== -->
+
+    <section id="tc" class="ud-relative ud-z-10 ud-pt-40 ud-ml-10 ud-mr-10">
+        <div class="ud-container">
+            <div class="ud-mx-auto">
+                <div id="tc">
+                    <h2>Terms and Conditions of <span class="website_url mmd:ud-text-med">https://backroomdao.com</span></h2>
+                    The following terms and conditions (collectively, these "Terms and Conditions") apply to your use of
+                    <span class="website_url">https://backroomdao.com</span>, including any content, functionality and
+                    services offered on or via <span class="website_url">https://backroomdao.com</span> (the "Website").
+
+                    Please read the Terms and Conditions carefully before you start using <span class="website_name">The Back Room</span>, because by using the Website you accept and agree to be bound and
+                    abide
+                    by these Terms and Conditions.
+
+                    These Terms and Conditions are effective as of 20 May 2021 . We expressly reserve the right to
+                    change
+                    these Terms and Conditions from time to time without notice to you. You acknowledge and agree that
+                    it is
+                    your responsibility to review this Website and these Terms and Conditions from time to time and to
+                    familiarize yourself with any modifications. Your continued use of this Website after such
+                    modifications
+                    will constitute acknowledgement of the modified Terms and Conditions and agreement to abide and be
+                    bound
+                    by the modified Terms and Conditions.
+                    <h3>Conduct on Website</h3>
+                    Your use of the Website is subject to all applicable laws and regulations, and you are solely
+                    responsible for the substance of your communications through the Website.
+
+                    By posting information in or otherwise using any communications service, chat room, message board,
+                    newsgroup, software library, or other interactive service that may be available to you on or through
+                    this Website, you agree that you will not upload, share, post, or otherwise distribute or facilitate
+                    distribution of any content — including text, communications, software, images, sounds, data, or
+                    other
+                    information — that: 
+                    <ul>
+                    <br>
+                        <li>Is unlawful, threatening, abusive, harassing, defamatory, libelous, deceptive, fraudulent,
+                            invasive of another's privacy, tortious, contains explicit or graphic descriptions or
+                            accounts
+                            of sexual acts (including but not limited to sexual language of a violent or threatening
+                            nature
+                            directed at another individual or group of individuals), or otherwise violates our rules or
+                            policies</li>
+                        <li>Victimizes, harasses, degrades, or intimidates an individual or group of individuals on the
+                            basis of religion, gender, sexual orientation, race, ethnicity, age, or disability</li>
+                        <li>Infringes on any patent, trademark, trade secret, copyright, right of publicity, or other
+                            proprietary right of any party</li>
+                        <li>Constitutes unauthorized or unsolicited advertising, junk or bulk email (also known as
+                            "spamming"), chain letters, any other form of unauthorized solicitation, or any form of
+                            lottery
+                            or gambling</li>
+                        <li>Contains software viruses or any other computer code, files, or programs that are designed
+                            or
+                            intended to disrupt, damage, or limit the functioning of any software, hardware, or
+                            telecommunications equipment or to damage or obtain unauthorized access to any data or other
+                            information of any third party</li>
+                        <li>Impersonates any person or entity, including any of our employees or representatives</li>
+                    </ul>
+                    <br>
+                    We neither endorse nor assume any liability for the contents of any material uploaded or submitted
+                    by
+                    third party users of the Website. We generally do not pre-screen, monitor, or edit the content
+                    posted by
+                    users of communications services, chat rooms, message boards, newsgroups, software libraries, or
+                    other
+                    interactive services that may be available on or through this Website.
+
+                    However, we and our agents have the right at their sole discretion to remove any content that, in
+                    our
+                    judgment, does not comply with these Terms of Use and any other rules of user conduct for our
+                    Website,
+                    or is otherwise harmful, objectionable, or inaccurate. We are not responsible for any failure or
+                    delay
+                    in removing such content. You hereby consent to such removal and waive any claim against us arising
+                    out
+                    of such removal of content.
+
+                    You agree that we may at any time, and at our sole discretion, terminate your membership, account,
+                    or
+                    other affiliation with our site without prior notice to you for violating any of the above
+                    provisions.
+
+                    In addition, you acknowledge that we will cooperate fully with investigations of violations of
+                    systems
+                    or network security at other sites, including cooperating with law enforcement authorities in
+                    investigating suspected criminal violations.
+                    <h3>Intellectual Property</h3>
+                    By accepting these Terms and Conditions, you acknowledge and agree that all content presented to you
+                    on
+                    this Website is protected by copyrights, trademarks, service marks, patents or other proprietary
+                    rights
+                    and laws, and is the sole property of <span class="website_name">The Back Room</span>.
+
+                    You are only permitted to use the content as expressly authorized by us or the specific content
+                    provider. Except for a single copy made for personal use only, you may not copy, reproduce, modify,
+                    republish, upload, post, transmit, or distribute any documents or information from this Website in
+                    any
+                    form or by any means without prior written permission from us or the specific content provider, and
+                    you
+                    are solely responsible for obtaining permission before reusing any copyrighted material that is
+                    available on this Website.
+                    <h3>Third Party Websites</h3>
+                    This Website may link you to other sites on the Internet or otherwise include references to
+                    information,
+                    documents, software, materials and/or services provided by other parties. These websites may contain
+                    information or material that some people may find inappropriate or offensive.
+
+                    These other websites and parties are not under our control, and you acknowledge that we are not
+                    responsible for the accuracy, copyright compliance, legality, decency, or any other aspect of the
+                    content of such sites, nor are we responsible for errors or omissions in any references to other
+                    parties
+                    or their products and services. The inclusion of such a link or reference is provided merely as a
+                    convenience and does not imply endorsement of, or association with, the Website or party by us, or
+                    any
+                    warranty of any kind, either express or implied.
+                    <h3>Disclaimer of Warranties, Limitations of Liability and Indemnification</h3>
+                    Your use of <span class="website_name">The Back Room</span> is at your sole risk. The
+                    Website
+                    is provided "as is" and "as available". We disclaim all warranties of any kind, express or implied,
+                    including, without limitation, the warranties of merchantability, fitness for a particular purpose
+                    and
+                    non-infringement.
+
+                    We are not liable for damages, direct or consequential, resulting from your use of the Website, and
+                    you
+                    agree to defend, indemnify and hold us harmless from any claims, losses, liability costs and
+                    expenses
+                    (including but not limites to attorney's fees) arising from your violation of any third-party's
+                    rights.
+                    You acknowledge that you have only a limited, non-exclusive, nontransferable license to use the
+                    Website.
+                    Because the Website is not error or bug free, you agree that you will use it carefully and avoid
+                    using
+                    it ways which might result in any loss of your or any third party's property or information.
+                    <h3>Term and termination</h3>
+                    This Terms and Conditions will become effective in relation to you when you create a <span
+                        class="website_name">The Back Room</span> account or when you start using the <span
+                        class="website_name">The Back Room</span> and will remain effective until terminated
+                    by
+                    you or by us.
+
+                    <span class="website_name">The Back Room</span> reserves the right to terminate this Terms
+                    and
+                    Conditions or suspend your account at any time in case of unauthorized, or suspected unauthorized
+                    use of
+                    the Website whether in contravention of this Terms and Conditions or otherwise. If <span
+                        class="website_name">The Back Room</span> terminates this Terms and Conditions, or
+                    suspends your account for any of the reasons set out in this section, <span class="website_name">The Back Room</span> shall have no liability or responsibility to you.
+                    <h3>Assignment</h3>
+                    <span class="website_name">The Back Room</span> may assign this Terms and Conditions or
+                    any
+                    part of it without restrictions. You may not assign this Terms and Conditions or any part of it to
+                    any
+                    third party.
+                    <h3>Governing Law</h3>
+                    These Terms and Conditions and any dispute or claim arising out of, or related to them, shall be
+                    governed by and construed in accordance with the internal laws of Bulgaria without giving effect to
+                    any
+                    choice or conflict of law provision or rule.
+
+                    Any legal suit, action or proceeding arising out of, or related to, these Terms of Service or the
+                    Website shall be instituted exclusively in the federal courts of <span
+                        class="country">Bulgaria</span>.
+
+
+                    <h2 style="padding-top: 2rem;">Privacy Policy for Heliocentrix Ltd.</h2>
+                    At The Back Room, accessible from https://backroomdao.com, one of our main priorities is
+                    the privacy of our visitors. This Privacy Policy document contains types of information that is
+                    collected and recorded by The Back Room and how we use it.
+
+                    If you have additional questions or require more information about our Privacy Policy, do not
+                    hesitate to contact us.
+                    <h3>General Data Protection Regulation (GDPR)</h3>
+                    We are a Data Controller of your information.
+
+                    Heliocentrix Ltd. legal basis for collecting and using the personal information described in this Privacy
+                    Policy depends on the Personal Information we collect and the specific context in which we collect
+                    the information:
+                    <ul>
+                    <br>
+                        <li>Heliocentrix Ltd. needs to perform a contract with you</li>
+                        <li>You have given Heliocentrix Ltd. permission to do so</li>
+                        <li>Processing your personal information is in Heliocentrix Ltd. legitimate interests</li>
+                        <li>Heliocentrix Ltd. needs to comply with the law</li>
+                    </ul>
+                    <br>
+                    Heliocentrix Ltd. will retain your personal information only for as long as is necessary for the purposes
+                    set out in this Privacy Policy. We will retain and use your information to the extent necessary to
+                    comply with our legal obligations, resolve disputes, and enforce our policies.
+
+                    If you are a resident of the European Economic Area (EEA), you have certain data protection rights.
+                    If you wish to be informed what Personal Information we hold about you and if you want it to be
+                    removed from our systems, please contact us.
+
+                    In certain circumstances, you have the following data protection rights: 
+                    <ul>
+                    <br>
+                        <li>The right to access, update or to delete the information we have on you.</li>
+                        <li>The right of rectification.</li>
+                        <li>The right to object.</li>
+                        <li>The right of restriction.</li>
+                        <li>The right to data portability</li>
+                        <li>The right to withdraw consent</li>
+                    </ul>
+                    <h3>Log Files</h3>
+                    The Back Room follows a standard procedure of using log files. These files log visitors
+                    when they visit websites. All hosting companies do this and a part of hosting services' analytics.
+                    The information collected by log files include internet protocol (IP) addresses, browser type,
+                    Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number
+                    of clicks. These are not linked to any information that is personally identifiable. The purpose of
+                    the information is for analyzing trends, administering the site, tracking users' movement on the
+                    website, and gathering demographic information.
+                    <h3>Cookies and Web Beacons</h3>
+                    Like any other website, The Back Room uses 'cookies'. These cookies are used to store
+                    information including visitors' preferences, and the pages on the website that the visitor accessed
+                    or visited. The information is used to optimize the users' experience by customizing our web page
+                    content based on visitors' browser type and/or other information.
+
+                    For more general information on cookies, please read <a
+                        href="https://www.privacypolicyonline.com/what-are-cookies/">"What Are Cookies"</a>.
+                    <h3>Privacy Policies</h3>
+                    You may consult this list to find the Privacy Policy for each of the advertising partners of The Back Room.
+
+                    Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons
+                    that are used in their respective advertisements and links that appear on The Back Room,
+                    which are sent directly to users' browser. They automatically receive your IP address when this
+                    occurs. These technologies are used to measure the effectiveness of their advertising campaigns
+                    and/or to personalize the advertising content that you see on websites that you visit.
+
+                    Note that The Back Room has no access to or control over these cookies that are used by
+                    third-party advertisers.
+                    <h3>Third Party Privacy Policies</h3>
+                    The Back Room's Privacy Policy does not apply to other advertisers or websites. Thus, we
+                    are advising you to consult the respective Privacy Policies of these third-party ad servers for more
+                    detailed information. It may include their practices and instructions about how to opt-out of
+                    certain options.
+
+                    You can choose to disable cookies through your individual browser options. To know more detailed
+                    information about cookie management with specific web browsers, it can be found at the browsers'
+                    respective websites.
+                    <h3>Children's Information</h3>
+                    Another part of our priority is adding protection for children while using the internet. We
+                    encourage parents and guardians to observe, participate in, and/or monitor and guide their online
+                    activity.
+
+                    The Back Room does not knowingly collect any Personal Identifiable Information from
+                    children under the age of 13. If you think that your child provided this kind of information on our
+                    website, we strongly encourage you to contact us immediately and we will do our best efforts to
+                    promptly remove such information from our records.
+                    <h3>Online Privacy Policy Only</h3>
+                    Our Privacy Policy applies only to our online activities and is valid for visitors to our website
+                    with regards to the information that they shared and/or collect in The Back Room. This
+                    policy is not applicable to any information collected offline or via channels other than this
+                    website.
+                    <h3>Consent</h3>
+                    By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- ===== TC end ===== -->
+
+        <!-- ===== Footer start ===== -->
+        <footer class="ud-relative ud-z-10 ud-pt-[120px]">
+            <div class="ud-container ud-px-14">
+                <div class=" ud-flex ud-flex-wrap">
+                    <div class="ud-w-full md:ud-w-1/2 lg:ud-w-4/12 xl:ud-w-4/12">
+                        <div class="wow fadeInUp ud-mb-14 ud-max-w-[330px] xl:ud-mb-20" data-wow-delay="0s">
+                            <a href="index.html" class="ud-mb-6 ud-inline-block">
+                                <img src="images/logo/logo-backroom.png" alt="logo"
+                                    class="ud-my-[6px] ud-mr-13 ud-w-60p" />
+                            </a>
+                            <p class="ud-mb-10 ud-text-med ud-font-medium ud-text-body-color-2 dark:ud-text-body-color">
+                                Owned by the community of players, Back Room DAO is a project which
+                                transforms regular gambling into a decentralized, verifiably random, and
+                                fully secure experience.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="ud-w-full ud-mx-auto ud-px-4 sm:ud-w-1/2 md:ud-w-1/2 lg:ud-w-4/12 xl:ud-w-2/12">
+                        <div class="wow fadeInUp ud-mb-14 xl:ud-mb-20" data-wow-delay="0s">
+                            <p class="ud-mb-5 ud-text-xl ud-font-bold ud-text-black dark:ud-text-white">
+                                Technical
+                            </p>
+                            <div class="ud-space-y-3">
+                                <a href="index.html#contact"
+                                    class="ud-block ud-text-base ud-font-medium ud-text-body-color-2 hover:ud-col-lgold ud-text-body-color">
+                                    Whitelist
+                                </a>
+                                <a href="index.html#roadmap"
+                                    class="ud-block ud-text-base ud-font-medium ud-text-body-color-2 hover:ud-col-lgold ud-text-body-color">
+                                    Timeline
+                                </a>
+                                <a href="litepaper.pdf" target="_blank"
+                                    class="ud-block ud-text-base ud-font-medium ud-text-body-color-2 hover:ud-col-lgold ud-text-body-color">
+                                    Litepaper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ud-w-full ud-mx-auto ud-px-4 sm:ud-w-1/2 md:ud-w-1/2 lg:ud-w-4/12 xl:ud-w-2/12">
+                        <div class="wow fadeInUp ud-mb-14 xl:ud-mb-20" data-wow-delay="0s">
+                            <p class="ud-mb-5 ud-text-xl ud-font-bold ud-text-black dark:ud-text-white">
+                                Support
+                            </p>
+                            <div class="ud-space-y-3">
+                                <a href="javascript:void(0)"
+                                    class="ud-block ud-text-base ud-font-medium ud-text-body-color-2 hover:ud-col-lgold ud-text-body-color">
+                                    Terms & Conditions
+                                </a>
+                                <a href="https://discord.gg/tDE8eQFdKA" target="_blank"
+                                    class="ud-block ud-text-base ud-font-medium ud-text-body-color-2 hover:ud-col-lgold ud-text-body-color">
+                                    Discord
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add social media links here -->
+                    <div class="ud-w-full ud-mx-auto ud-px-4 sm:ud-w-1/2 md:ud-w-1/2 lg:ud-w-4/12 xl:ud-w-2/12">
+                        <div class="wow fadeInUp ud-mx-auto ud-mb-14 ud-max-w-[330px] xl:ud-mb-20" data-wow-delay="0s">
+                            <p class="ud-mb-5 ud-text-xl ud-font-bold ud-text-black dark:ud-text-white">
+                                Contacts
+                            </p>
+                            <div class="ud-flex ud-items-center ud-space-x-3">
+                                <a href="https://discord.gg/tDE8eQFdKA" target="_blank"
+                                    class="ud-flex ud-h-10 ud-w-10 ud-items-center ud-justify-center ud-rounded-full ud-bg-dbrown ud-text-white hover:ud-col-lgold"
+                                    name="social-link" aria-label="social-link">
+                                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.25 8.46875C7.6875 8.46875 7.28125 8.96875 7.28125 9.53125C7.28125 10.0938 7.71875 10.5938 8.25 10.5938C8.8125 10.5938 9.21875 10.125 9.21875 9.53125C9.25 8.9375 8.8125 8.46875 8.25 8.46875Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M11.75 10.5625C12.285 10.5625 12.7187 10.0868 12.7187 9.5C12.7187 8.9132 12.285 8.4375 11.75 8.4375C11.215 8.4375 10.7812 8.9132 10.7812 9.5C10.7812 10.0868 11.215 10.5625 11.75 10.5625Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M16.4687 0.3125H3.53125C2.4375 0.3125 1.53125 1.1875 1.53125 2.28125V15.375C1.53125 16.4688 2.40625 17.3438 3.5 17.3438H14.4687L13.9375 15.5938L15.1562 16.75L16.3437 17.8437L18.4062 19.6875V2.28125C18.5 1.1875 17.5625 0.3125 16.4687 0.3125ZM12.7187 12.9375C12.7187 12.9375 12.375 12.5313 12.0625 12.1563C13.3437 11.8125 13.8125 11 13.8125 11C13.4062 11.25 13.0312 11.4375 12.7187 11.5625C12.25 11.7812 11.75 11.9062 11.3125 11.9687C10.375 12.1562 9.5625 12.0937 8.8125 11.9687C8.25 11.875 7.8125 11.7188 7.40625 11.5625C7.1875 11.4687 6.90625 11.375 6.6875 11.25C6.65625 11.25 6.65625 11.2188 6.59375 11.2188C6.59375 11.2188 6.5625 11.2187 6.5625 11.1875C6.375 11.0937 6.3125 11 6.3125 11C6.3125 11 6.8125 11.7813 8.03125 12.1563C7.71875 12.5 7.375 12.9375 7.375 12.9375C5.21875 12.8438 4.4375 11.5 4.4375 11.5C4.4375 8.375 5.84375 5.875 5.84375 5.875C7.25 4.8125 8.5625 4.875 8.5625 4.875L8.65625 5C6.875 5.46875 6.09375 6.25 6.09375 6.25C6.09375 6.25 6.3125 6.125 6.65625 6C7.71875 5.5625 8.5 5.4375 8.84375 5.375C8.875 5.375 8.9375 5.375 9.03125 5.375C9.59375 5.28125 10.3125 5.28125 10.9687 5.375C11.9062 5.46875 12.875 5.78125 13.875 6.3125C13.875 6.3125 13.125 5.59375 11.4375 5.09375L11.5625 4.90625C11.5625 4.90625 12.875 4.875 14.2812 5.90625C14.2812 5.90625 15.6875 8.40625 15.6875 11.5313C15.7187 11.5 14.875 12.9063 12.7187 12.9375Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/backroomdao?s=20&t=37Ta6BPRKvg3E822FmZSdw" target="_blank"
+                                    class="ud-flex ud-h-10 ud-w-10 ud-items-center ud-justify-center ud-rounded-full ud-bg-dbrown ud-text-white hover:ud-col-lgold"
+                                    name="social-link" aria-label="social-link">
+                                    <svg width="18" height="15" viewBox="0 0 18 15" class="ud-fill-current">
+                                        <path
+                                            d="M17.7165 2.00016C17.0749 2.29183 16.3832 2.4835 15.6665 2.57516C16.3999 2.1335 16.9665 1.4335 17.2332 0.591829C16.5415 1.0085 15.7749 1.30016 14.9665 1.46683C14.3082 0.750163 13.3832 0.333496 12.3332 0.333496C10.3749 0.333496 8.77487 1.9335 8.77487 3.9085C8.77487 4.19183 8.8082 4.46683 8.86654 4.72516C5.89987 4.57516 3.2582 3.15016 1.49987 0.991829C1.19154 1.51683 1.01654 2.1335 1.01654 2.7835C1.01654 4.02516 1.64154 5.12516 2.6082 5.75016C2.01654 5.75016 1.46654 5.5835 0.983203 5.3335C0.983203 5.3335 0.983203 5.3335 0.983203 5.3585C0.983203 7.09183 2.21654 8.54183 3.84987 8.86683C3.54987 8.95016 3.2332 8.99183 2.9082 8.99183C2.6832 8.99183 2.4582 8.96683 2.24154 8.92516C2.69154 10.3335 3.99987 11.3835 5.57487 11.4085C4.3582 12.3752 2.81654 12.9418 1.1332 12.9418C0.84987 12.9418 0.566536 12.9252 0.283203 12.8918C1.86654 13.9085 3.74987 14.5002 5.76654 14.5002C12.3332 14.5002 15.9415 9.05016 15.9415 4.32516C15.9415 4.16683 15.9415 4.01683 15.9332 3.8585C16.6332 3.3585 17.2332 2.72516 17.7165 2.00016Z" />
+                                    </svg>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wow fadeInUp ud-border-t ud-border-darkgold ud-py-7 ud-text-center" data-wow-delay="0s">
+                    <p
+                        class="ud-text-base ud-font-medium ud-leading-loose ud-text-body-color-2 dark:ud-text-body-color">
+                        2022 © The Back Room - All Rights Reserved
+
+
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+
+        </footer>
+        <!-- ===== Footer end ===== -->
+
+
+
+        <!-- ===== JS Files ====== -->
+        <script src="js/apexcharts.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            // ==== for menu scroll
+            const pageLink = document.querySelectorAll(".scroll-menu");
+
+            pageLink.forEach((elem) => {
+                elem.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    document.querySelector(elem.getAttribute("href")).scrollIntoView({
+                        behavior: "smooth",
+                        offsetTop: 1 - 60,
+                    });
+                });
+            });
+
+            // section menu active
+            function onScroll(event) {
+                const sections = document.querySelectorAll(".scroll-menu");
+                const scrollPos =
+                    window.pageYOffset ||
+                    document.documentElement.scrollTop ||
+                    document.body.scrollTop;
+
+                for (let i = 0; i < sections.length; i++) {
+                    const currLink = sections[i];
+                    const val = currLink.getAttribute("href");
+                    const refElement = document.querySelector(val);
+                    const scrollTopMinus = scrollPos + 73;
+                    if (
+                        refElement.offsetTop <= scrollTopMinus &&
+                        refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+                    ) {
+                        document
+                            .querySelector(".scroll-menu")
+                            .classList.remove("dark:ud-text-white", "ud-text-primary");
+                        currLink.classList.add("dark:ud-text-white", "ud-text-primary");
+                    } else {
+                        currLink.classList.remove("dark:ud-text-white", "ud-text-primary");
+                    }
+                }
+            }
+
+            window.document.addEventListener("scroll", onScroll);
+
+            var options = {
+                series: [73, 55, 38, 20],
+                chart: {
+                    type: "donut",
+                    width: 400,
+                },
+                colors: ["#2347B9", "#3363FF", "#8BA6FF", "#8696CA"],
+                legend: {
+                    show: false,
+                },
+                stroke: {
+                    show: false,
+                },
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        options: {
+                            chart: {
+                                width: 200,
+                            },
+                            legend: {
+                                position: "bottom",
+                            },
+                        },
+                    },
+                ],
+            };
+
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+        </script>
+</body>
+
+</html>
