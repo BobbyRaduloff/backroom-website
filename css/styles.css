@@ -82,6 +82,14 @@
     align-items: center;
 }
 
+.ud-opacity-15{
+    opacity: 0.15;
+  }
+
+  .ud-opacity-12{
+    opacity: 0.12;
+  }
+
 .lg\:ud-py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -458,6 +466,12 @@
 
     .mmd\:ud-mr-2 {
         margin-right: 1.75rem;
+    }
+
+    .mmd\:ud-fit-phone {
+        object-fit: cover;
+        height: 100%;
+        object-position: 53% 0;
     }
 }
 
