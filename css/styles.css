@@ -471,7 +471,7 @@
     .mmd\:ud-fit-phone {
         object-fit: cover;
         height: 100%;
-        object-position: 53% 0;
+        /* object-position: 53% 0; */
     }
 }
 
